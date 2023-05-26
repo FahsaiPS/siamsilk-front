@@ -1,0 +1,34 @@
+{
+  "user": [
+    {
+      "id": "fahsai",
+      "name": "FS",
+      "password": "1q2w3e4r",
+      "email": "FS@hotmail.com",
+      "phone": "086044427",
+      "country": "Thailand",
+      "address": "Thammasat University",
+      "gender": "female"
+    },
+    {
+      "id": "iceza",
+      "name": "ice",
+      "password": "12345678",
+      "email": "icezgame@gmail.com",
+      "phone": "0950020142",
+      "country": "Thailand",
+      "address": "89/1 m.11 tambon,bangpleeyai",
+      "gender": "female"
+    },
+    {
+      "id": "zaza",
+      "name": "xzaszaza",
+      "password": "123456",
+      "email": "icezgame@gmail.com",
+      "phone": "0950020142",
+      "country": "Thailand",
+      "address": "89/1 m.11 tambon,bangpleeyai",
+      "gender": "female"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+#root {
+  font-family: poppins;
+  margin-top: 100px;
+}
+
+.noti{
+  margin-top: 95px;
+}
+
+.text-header {
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 200px;
+}
+
+.input-control {
+  width: 350px;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 10px;
+  font-family: Poppins;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.card {
+  border: none;
+}
+
+.card .checked-box{
+    color: #5d5d5d;
+    font-size: 14px;
+}
+
+.center {
+  position: flex;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.agree-term {
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+
+.agree-term:checked {
+  background-color: black;
+}
+
+input[type="checkbox"] {
+  appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  -webkit-appearance: checkbox !important;
+  -o-appearance: checkbox !important;
+  -ms-appearance: checkbox !important;
+}
+
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+  accent-color: #043667;
+}
+
+.btn-primary {
+    background-color: #043667 !important;
+    border-color: #043667 !important;
+  }
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:visited,
+  .btn-primary:focus {
+    background-color: #022242 !important;
+    border-color: #022242 !important;
+  }
+
+  
+.Regis-text{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+
+}
+
+.text-link{
+    font-size: 14px;
+    color: #043667;
+    text-decoration: underline;
+}
+
+.Login-form{
+  margin-bottom: 200px;
+}

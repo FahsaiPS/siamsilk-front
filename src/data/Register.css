@@ -1,0 +1,85 @@
+#root{
+    font-family: poppins;
+    margin-top: 100px;
+}
+
+.input-control {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 6px 10px;
+    font-family: Poppins;
+    box-sizing: border-box; 
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.app-check{
+    margin-left: 50%;
+}
+
+input[type="radio"] {
+    margin: 0px 0;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: 5px;
+    width: 17px;
+    height: 17px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    
+}
+
+.noti{
+    margin-top: 95px;
+  }
+  
+input[type="radio"]:checked {
+    background-color: #1159a1;
+  }
+
+.radio-name{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.text-header{
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 200px;
+}
+
+.card-footer{
+text-align: center;
+}
+
+.edit{
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #043667 !important;
+    border-color: #043667 !important;
+  }
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:visited,
+  .btn-primary:focus {
+    background-color: #022242 !important;
+    border-color: #022242 !important;
+  }
+
+.text{
+    margin-bottom: 10px;
+}
+
+.card-footer{
+    background-color: transparent !important;
+}
+
+.Register-form{
+    margin-bottom: 100px;
+}

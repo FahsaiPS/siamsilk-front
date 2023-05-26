@@ -1,0 +1,382 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.navigation {
+    top: 0;
+    z-index: 9999 !important;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 0.5rem 0rem;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+}
+
+.navbar {
+    display: block;
+}
+
+.brand-logo {
+    padding-left: 60px;
+    width: auto;
+    height: auto;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+}
+
+.everShow-icon {
+    width: 30px;
+    height: 30px;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.navigation-bag {
+    margin-right: 20px;
+    height: 100px;
+}
+
+.navigation-bag a {
+    text-decoration: none;
+    width: 100%;
+    font-size: 10px;
+    color: black !important;
+    text-shadow: 0.25px 0.25px rgb(123, 123, 123);
+    margin-top: 0% !important;
+    padding-top: 0% !important;
+}
+
+/*--navigation-main--*/
+.navigation-main ul {
+    display: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navigation-main.expanded ul {
+    display: block;
+}
+
+.navigation-main ul {
+    /* navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
+    position: absolute;
+    top: 90px;
+    left: 0;
+    /* stacks the li tags vertically  */
+    flex-direction: column;
+    /* makes menu span full height and width */
+    width: 420px;
+    height: calc(100vh - 200px);
+    background-color: white;
+}
+
+.navigation-main li {
+    /* centers link text and strips off margin */
+    list-style-type: none;
+    text-align: left;
+    padding: 24px;
+}
+
+.navigation-main li a {
+    text-decoration: none;
+    width: 100%;
+    font-size: 18px;
+    color: black !important;
+    text-shadow: 0.25px 0.25px rgb(123, 123, 123);
+}
+
+.navigation-main li:hover {
+    background-color: #eee;
+}
+
+/*--navigation-menu--*/
+.navigation-menu {
+    margin: 0px 10px;
+}
+
+.navigation-menu ul {
+    display: flex;
+    padding: 0;
+    height: 100%;
+}
+
+.navigation-menu li {
+    /* removes default disc bullet for li tags and applies margin to left & right side */
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.navigation-menu li a {
+    /* increases the surface area of the anchor tag to span more than just the anchor text */
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: 10px;
+    color: black !important;
+    text-shadow: 0.25px 0.25px rgb(123, 123, 123);
+    margin-top: 14px;
+}
+
+.hamburger {
+    /* removes default border on button element */
+    border: 0;
+    height: 33px;
+    width: 33px;
+    padding: 0.5rem;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    /* positions the icon to the right and center aligns it vertically */
+    /* position: absolute;*/
+    top: 50%;
+    margin-left: 20px;
+    /*transform: translateY(-50%);
+    display: none;*/
+    /*background-image: url('../../assets/more.png');*/
+    background-size: cover;
+}
+
+/*--Search--*/
+.search-icon {
+    display: grid;
+    row-gap: 5.85px;
+    font-size: 10.5px;
+    color: black;
+    text-shadow: 0.30px 0.30px rgb(123, 123, 123);
+}
+
+.searchBox {
+    top: 150%;
+    transform: translate(-0%, -0%);
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.searchBox input {
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 23px;
+    font-size: 18px;
+    color: #022242;
+    transition: all 1s;
+}
+
+.searchBox input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.searchBox i {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    padding: 0%;
+    margin: 0%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.searchBox:hover input {
+    width: 140px;
+    opacity: 1;
+    border-bottom: 1px solid #022242;
+    padding: 5px 5px;
+    padding-top: 15px;
+}
+
+.searchBox:hover i {
+    color: #022242;
+}
+
+/*--Checkbox--*/
+.checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 18px;
+    left: 15px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-lines .line {
+    display: block;
+    height: 3px;
+    width: 90%;
+    border-radius: 10px;
+    background: black;
+}
+
+.hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+
+#menu_toggle:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+    width: 78%;
+}
+
+#menu_toggle:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+#menu_toggle:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+    width: 78%;
+}
+
+#menu_toggle:checked~.navigation-main ul {
+    position: fixed;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/*--Dropdown Account--*/
+.dropdown-content {
+    display: none;
+    margin-top: 3px;
+    background: #fff;
+    min-width: 160px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    width: 50%;
+    padding: 17px;
+    margin-top: 0% !important;
+    font-size: 18px;
+}
+
+.dropdown-content a:hover {
+    background: #e7e7e7;
+    width: 160px;
+}
+
+#account:hover .dropdown-content {
+    display: block;
+}
+
+
+@media screen and (max-width: 768px) {
+    .icon {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navigation-main.expanded ul {
+        display: block;
+    }
+
+    .navigation-main ul {
+        width: 100%;
+    }
+
+    .navigation-main li {
+        text-align: center;
+    }
+
+    .navigation-menu ul {
+        display: none;
+        margin: 0%;
+    }
+
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+
+    .navigation-menu ul {
+        /* navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
+        position: absolute;
+        top: 389px;
+        left: 0;
+        /* stacks the li tags vertically  */
+        flex-direction: column;
+        /* makes menu span full height and width */
+        width: 100%;
+        height: calc(100vh - 200px);
+        background-color: white;
+
+    }
+
+    .navigation-menu li {
+        /* centers link text and strips off margin */
+        text-align: center;
+        margin: 0;
+    }
+
+    .navigation-menu li a {
+        font-size: 18px;
+        color: black;
+        /* increases the surface area of the anchor tag to span the full width of the menu */
+        width: 100%;
+        padding: 1.5rem 0;
+        margin-top: 0%;
+    }
+
+    .navigation-menu li:hover {
+        background-color: #eee;
+    }
+
+    .navigation-bag {
+        margin-right: 10px;
+    }
+
+
+}

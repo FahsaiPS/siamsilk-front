@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+	margin: 0px;;
+	padding: 0px;
+	box-sizing: border-box;
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+.line hr{
+    border-top: 2px solid black;
+}
+[role="button"]{
+	margin-top: 10px;
+}
+.noti{
+	margin-top: 95px;
+}
