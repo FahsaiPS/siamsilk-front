@@ -3,7 +3,7 @@
     - npm install
     - npm start
 
-# Demo Vedio
+# Demo Vidio
 https://youtu.be/yeCxMmu6oHg?si=W34KcGPc19JlkBzq
 
 # Document
